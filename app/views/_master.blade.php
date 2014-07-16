@@ -4,8 +4,8 @@
 <head>
 	<title>@yield ('title', 'Developer´s Best Friend')</title>
 	<meta charset="utf-8">
-	<link href="Css/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="Css/style.css" rel="stylesheet">
+	<link href="css/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
