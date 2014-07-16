@@ -17,7 +17,12 @@ Route::get('/', function()
 });
 
 
-Route::get('/loremipsumgenerator', function()
+Route::get('/loremipsum', function()
+{
+	return View::make('lorem');
+});
+
+Route::post('/loremipsum', function()
 {
 	return View::make('lorem');
 });
@@ -26,3 +31,9 @@ Route::get('/usergenerator', function()
 {
 	return View::make('user');
 });
+
+Route::post('/usergenerator', function()
+{
+	return View::make('user');
+});
+
