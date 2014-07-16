@@ -37,3 +37,17 @@ Route::post('/usergenerator', function()
 	return View::make('user');
 });
 
+Route::get('/passwordgenerator', function()
+{
+	$array= new passgen();
+	$password= $array->get_password();
+	return View::make('password')-> with('password', $password);
+});
+
+Route::post('/passwordgenerator', function()
+{
+	$array= new passgen();
+	$password= $array->get_password();
+	return View::make('password')-> with('password', $password);
+});
+
