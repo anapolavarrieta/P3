@@ -1,0 +1,49 @@
+div.content{
+	padding-left:3%;
+}
+
+div.home{
+	text-align: right;
+	font-size: 120%;
+	font-weight: bold;
+	text-decoration: underline;
+	padding-right:5%;
+	padding-top:1%;
+}
+h1{
+	text-align:center;
+}
+
+h2{
+	text-decoration: underline;
+	font-size: 150%;
+}
+
+a.info{
+	color: purple;
+	text-decoration: underline;
+}
+
+a.link{
+	font-size:150%;
+}
+
+div.form{
+	padding-top:3%;
+}
+
+.buttom{
+	background-color: #428BCA;
+	font-weight: bold;
+	color: white;
+}
+
+div.users{
+	font-weight: bold;
+}
+
+p.password{
+	font-size:150%;
+	text-align: center;
+}
+

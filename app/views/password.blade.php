@@ -6,10 +6,11 @@
 
 @section('content')
 	<h1> Password Generator </h1>
+	<div class="form">
 	{{Form::open(array('url' => 'passwordgenerator')) }}	
 		{{ Form::label ('words', '# of Words:')}}
 		{{ Form::text ('words')}}
-		<br/> 
+		<br/> <br/>
 		{{ Form::label ('separation', 'Choose how to separate words')}}
 		{{ Form::select ('separation', array(
 			'space' => 'Space',
@@ -27,10 +28,11 @@
 		{{ Form::label ('upper', 'Upper case first letter of password')}}
 		{{ Form::checkbox ('upper')}}
 		<br/><br/>
-		{{ Form::submit('Generate Password')}}
+		{{ Form::submit('Generate Password', array('class'=> 'buttom'))}}
 	{{ Form::close() }}	
+	</div>
 
-	
-	<p>{{$password}}</p>
+	<br/>
+	<p class="password">{{$password}}</p>
 
 @stop

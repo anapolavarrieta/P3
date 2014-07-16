@@ -64,7 +64,7 @@ class passgen{
 		
 
 		if (!isset($words)){
-			$password= "CHOOSE NUMBER OF WORDS";
+			$password="";
 		}
 
 		if (isset($number) && $error==0){

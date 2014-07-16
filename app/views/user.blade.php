@@ -6,10 +6,11 @@
 
 @section('content')
 	<h1> User Generator </h1>
+	<div class="form">
 	{{Form::open(array('url' => 'usergenerator')) }}	
 		{{ Form::label ('users', 'Number of users:')}}
 		{{ Form::text ('users')}}
-		<br/>
+		<br/><br/>
 		<p> If you want to include one of the followings, check the box:</p>
 		{{ Form::label('birthdate', 'Birthdate')}}
 		{{ Form::checkbox('birthdate')}}
@@ -19,10 +20,12 @@
 		<br/>
 		{{ Form::label('profile', 'Profile')}}
 		{{ Form::checkbox('profile')}}
-		<br/><br/>
-		{{ Form::submit('Create Users')}}
+		<br/>
+		{{ Form::submit('Create Users', array('class'=> 'buttom'))}}
 	{{ Form::close() }}
+	</div>
 
+	<br/>
 	<?php $faker= Faker\Factory::create();?>
 	<?php $users= Input::get('users');?>
 	<?php $birthdate= Input::get('birthdate');?>
@@ -31,8 +34,7 @@
 
 	@if ($users>0 && $users<1000)
 		@for ($i=0; $i< $users; $i++)
-			{{ $faker->name}} 
-			<br/>
+			<div class="users"> {{ $faker->name}} </div>	
 			@if(isset($birthdate))
 				{{ $faker->date($format = 'm-d-Y', $max = 'now')}}
 				<br/>	
