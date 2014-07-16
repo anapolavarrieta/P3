@@ -12,3 +12,6 @@
 		<p> <a href="/usergenerator">Generate some users </a></p>
 @stop
 
+@section ('home')
+@stop
+

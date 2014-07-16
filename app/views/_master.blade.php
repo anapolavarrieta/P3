@@ -9,6 +9,9 @@
 <body>
 
 	@yield('content')
+	@section ('home')
+		<p> <a href="/"> Home Page </a> </p>
+	@show
 </body>
 
 </html>
